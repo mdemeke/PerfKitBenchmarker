@@ -1,4 +1,4 @@
-# Copyright 2015 PerfKitBenchmarker Authors. All rights reserved.
+# Copyright 2021 PerfKitBenchmarker Authors. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@ import importlib
 import logging
 import os
 import types
-
 from perfkitbenchmarker import events
 from perfkitbenchmarker import import_util
 from perfkitbenchmarker import requirements
@@ -33,6 +32,7 @@ IBMCLOUD = ibmcloud.CLOUD
 ALICLOUD = 'AliCloud'
 KUBERNETES = 'Kubernetes'
 DIGITALOCEAN = 'DigitalOcean'
+EQUINIXMETAL = 'EquinixMetal'
 OPENSTACK = 'OpenStack'
 CLOUDSTACK = 'CloudStack'
 RACKSPACE = 'Rackspace'
@@ -43,7 +43,7 @@ PROFITBRICKS = 'ProfitBricks'
 DOCKER = 'Docker'
 
 VALID_CLOUDS = (GCP, AZURE, AWS, IBMCLOUD, DIGITALOCEAN, KUBERNETES, OPENSTACK,
-                RACKSPACE, CLOUDSTACK, ALICLOUD, MESOS, PROFITBRICKS, DOCKER)
+                RACKSPACE, CLOUDSTACK, ALICLOUD, MESOS, PROFITBRICKS, DOCKER, EQUINIXMETAL)
 
 
 _imported_providers = set()

@@ -9,7 +9,7 @@ provider(s) you want to benchmark:
 *   [DigitalOcean](https://www.digitalocean.com)
 *   [Rackspace Cloud](https://www.rackspace.com)
 *   [ProfitBricks](https://www.profitbricks.com/)
-
+*   [Equinix Metal](https://metal.equinix.com)
 ## Cloud account setup
 
 This section describes the setup steps needed for each cloud system. Note that
@@ -28,6 +28,7 @@ want to test Google Cloud, you only need to install and configure `gcloud`.
 *   [DigitalOcean](#digitalocean-configuration-and-credentials)
 *   [RackSpace](#installing-clis-and-credentials-for-rackspace)
 *   [ProfitBricks](#profitbricks-configuration-and-credentials)
+*   [EquinixMetal](#Equinix-Metal-Config)
 
 After configuring the clouds you intend to use, skip to
 [Running a Single Benchmark](#running-a-single-benchmark), unless you are going
@@ -462,3 +463,10 @@ Open the `.boto` file and edit the following fields:
     `client_id`, `client_secret`: set these to be the same as those in your
     gcloud credentials file (`~/.config/gcloud/credentials.db`), which was setup
     as part of the `gcloud auth login` step.
+    
+## Equinix Metal Config
+1 . Install `metal`, the Equinix CLI, following the instructions at
+    https://github.com/equinix/metal-cli.
+ 2. Authenticate with `Metal`. The easiest way is running `EquinixMetal auth login` and
+    following the instructions, but any of the options at the `EquinixMetal` site will
+    work. Guides, Documentation, and examples are available.
