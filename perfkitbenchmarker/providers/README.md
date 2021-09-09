@@ -467,5 +467,6 @@ Open the `.boto` file and edit the following fields:
 ## Equinix Metal Config
 1 . Install `metal`, the Equinix CLI, following the instructions at
     https://github.com/equinix/metal-cli.
+ 
  2. Make sure to authenticate `Metal` and to give permission (allowing/verifying certificates etc.) but any of the options at the `EquinixMetal` site will
     work. Guides, Documentation, and examples are available.
