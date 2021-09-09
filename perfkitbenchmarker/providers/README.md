@@ -465,5 +465,8 @@ Open the `.boto` file and edit the following fields:
     as part of the `gcloud auth login` step.
     
 ## Equinix Metal Config
-Install `metal`, the Equinix CLI, following the instructions at
+1 . Install `metal`, the Equinix CLI, following the instructions at
     https://github.com/equinix/metal-cli.
+ 2. Authenticate with `Metal`. The easiest way is running `EquinixMetal auth login` and
+    following the instructions, but any of the options at the `EquinixMetal` site will
+    work. Guides, Documentation, and examples are available.
