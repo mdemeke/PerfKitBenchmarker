@@ -94,7 +94,7 @@ class MetalVirtualMachine(virtual_machine.BaseVirtualMachine):
         ['device', 'delete', '-i', self.device_id, '--force'])
     # The command doesn't return the HTTP status code, and the error
     # format is very difficult to parse, so we string
-    # search. TODO 404 is a standard error and is not in metal json output
+    # search. 
     if retcode and '404' in response['errors'][0]['detail']:
       return
     elif retcode:
