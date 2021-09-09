@@ -37,7 +37,7 @@ def MetalAndParse(arg_list):
       - Device's return code
 
   Raises:
-    errors.VmUtil.CalledProcessError if doctl fails.
+    errors.VmUtil.CalledProcessError if Metal fails.
   """
 
   stdout, _, retcode = vm_util.IssueCommand(
