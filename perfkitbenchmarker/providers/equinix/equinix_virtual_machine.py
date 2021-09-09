@@ -105,7 +105,7 @@ class MetalVirtualMachine(virtual_machine.BaseVirtualMachine):
     """Returns true if the VM exists."""
 
     response, retcode = util.MetalAndParse(
-        ['device', 'get', self.device_id])
+        ['device', 'get', '-i', self.device_id])
 
     return retcode == 0
 #Disk creation needs to be Finished, therefore FIO testing errors will occur unless changed
