@@ -261,7 +261,11 @@ $ ./pkb.py --cloud=Rackspace --machine_type=general1-2 --benchmarks=iperf
 ```bash
 $ ./pkb.py --cloud=ProfitBricks --machine_type=Small --benchmarks=iperf
 ```
+## Example run on Metal
 
+```bash
+./pkb.py --cloud=Equinix --machine_type=c3.small.x86 --image=ubuntu_18_04 --benchmarks=iperf 
+```
 # How to Run Windows Benchmarks
 
 Install all dependencies as above and ensure that smbclient is installed on your
@@ -349,6 +353,7 @@ CloudStack | QC-1 | |
 Rackspace | IAD | OnMetal machine-types are available only in IAD zone
 Kubernetes | k8s | |
 ProfitBricks | AUTO | Additional zones: ZONE_1, ZONE_2, or ZONE_3
+EquinixMetal | da | A metro is a regional location where in this case it is Dallas.
 
 Example:
 

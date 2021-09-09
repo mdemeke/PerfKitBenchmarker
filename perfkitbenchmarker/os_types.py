@@ -1,4 +1,4 @@
-# Copyright 2016 PerfKitBenchmarker Authors. All rights reserved.
+# Copyright 2021 PerfKitBenchmarker Authors. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,6 @@ COS = 'cos'
 CORE_OS = 'core_os'
 DEBIAN9 = 'debian9'
 DEBIAN10 = 'debian10'
-DEBIAN11 = 'debian11'
 JUJU = 'juju'
 RHEL7 = 'rhel7'
 RHEL8 = 'rhel8'
@@ -38,10 +37,8 @@ WINDOWS2019_CORE = 'windows2019_core'
 WINDOWS2012_DESKTOP = 'windows2012_desktop'
 WINDOWS2016_DESKTOP = 'windows2016_desktop'
 WINDOWS2019_DESKTOP = 'windows2019_desktop'
-WINDOWS2019_SQLSERVER_2017_STANDARD = 'windows2019_desktop_sqlserver_2017_standard'
-WINDOWS2019_SQLSERVER_2017_ENTERPRISE = 'windows2019_desktop_sqlserver_2017_enterprise'
-WINDOWS2019_SQLSERVER_2019_STANDARD = 'windows2019_desktop_sqlserver_2019_standard'
-WINDOWS2019_SQLSERVER_2019_ENTERPRISE = 'windows2019_desktop_sqlserver_2019_enterprise'
+
+
 # Base-only OS types
 DEBIAN = 'debian'
 RHEL = 'rhel'
@@ -56,7 +53,6 @@ LINUX_OS_TYPES = [
     COS,
     DEBIAN9,
     DEBIAN10,
-    DEBIAN11,
     JUJU,
     RHEL7,
     RHEL8,
@@ -73,10 +69,6 @@ WINDOWS_OS_TYPES = [
     WINDOWS2012_DESKTOP,
     WINDOWS2016_DESKTOP,
     WINDOWS2019_DESKTOP,
-    WINDOWS2019_SQLSERVER_2017_STANDARD,
-    WINDOWS2019_SQLSERVER_2017_ENTERPRISE,
-    WINDOWS2019_SQLSERVER_2019_STANDARD,
-    WINDOWS2019_SQLSERVER_2019_ENTERPRISE
 ]
 ALL = LINUX_OS_TYPES + WINDOWS_OS_TYPES
 BASE_OS_TYPES = [CLEAR, CORE_OS, DEBIAN, RHEL, WINDOWS]
