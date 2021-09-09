@@ -47,8 +47,7 @@ def MetalAndParse(arg_list):
       raise_on_failure=False)
 
   # In case of error, device's sometimes prints "null" before printing a
-  # JSON error string to stdout. TODO(user): improve parsing of
-  # error messages.
+  # JSON error string to stdout. 
   if retcode and stdout.startswith('null'):
     output = stdout[4:]
   else:
