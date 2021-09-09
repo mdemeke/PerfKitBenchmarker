@@ -24,4 +24,4 @@ from perfkitbenchmarker import providers
 class EquinixProviderInfo(provider_info.BaseProviderInfo):
 
  
-  CLOUD = providers.EQUINIX
+  CLOUD = providers.EQUINIXMETAL
