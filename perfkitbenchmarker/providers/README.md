@@ -28,6 +28,7 @@ want to test Google Cloud, you only need to install and configure `gcloud`.
 *   [DigitalOcean](#digitalocean-configuration-and-credentials)
 *   [RackSpace](#installing-clis-and-credentials-for-rackspace)
 *   [ProfitBricks](#profitbricks-configuration-and-credentials)
+*   [EquinixMetal](#Equinix-Metal-Config)
 
 After configuring the clouds you intend to use, skip to
 [Running a Single Benchmark](#running-a-single-benchmark), unless you are going
@@ -465,4 +466,4 @@ Open the `.boto` file and edit the following fields:
     
 ## Equinix Metal Config
 Install `metal`, the Equinix CLI, following the instructions at
-    `https://github.com/equinix/metal-cli`.
+    https://github.com/equinix/metal-cli.
