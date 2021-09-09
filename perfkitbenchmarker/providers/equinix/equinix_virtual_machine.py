@@ -17,7 +17,7 @@ from perfkitbenchmarker import errors
 from perfkitbenchmarker import providers
 from perfkitbenchmarker import virtual_machine
 from perfkitbenchmarker import vm_util
-from perfkitbenchmarker.providers.equinix import util
+from perfkitbenchmarker.providers.equinixmetal import util
 from six.moves import range
 from perfkitbenchmarker import linux_virtual_machine as linux_vm
 CLOUD_CONFIG_TEMPLATE = '''#cloud-config
@@ -37,7 +37,7 @@ runcmd:
 class MetalVirtualMachine(virtual_machine.BaseVirtualMachine):
   """Object representing a Baremetal Virtual Machine ."""
 
-  CLOUD = providers.EQUINIX
+  CLOUD = providers.EQUINIXMETAL
   # Subclasses should override the default image.
   DEFAULT_IMAGE = None
   
@@ -108,7 +108,6 @@ class MetalVirtualMachine(virtual_machine.BaseVirtualMachine):
         ['device', 'get', '-i', self.device_id])
 
     return retcode == 0
-#Disk creation needs to be Finished, therefore FIO testing errors will occur unless changed
 
 class Ubuntu1804BasedEquinixVirtualMachine(
     MetalVirtualMachine, linux_vm.Ubuntu1804Mixin):
